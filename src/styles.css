@@ -1,26 +1,33 @@
-
-.title {
-  font-family: sans-serif;
-  text-align: center;
+:root{
+  --background: rgb(61, 61, 61);
+  --bg-button: rgba(255, 255, 255, 0.667);
 }
 
-.component_container {
-  position: relative;
+
+body{
+  margin: 0%;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.main {
-  display: grid;
-  gap: 1em;
-}
 
-.button {
+.App{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  flex-direction: column;
+  height : 100vh;
+  width: 100%;
+  background: var(--background);
+}
+
+
+.button-gen{
+  padding: 1em;
+  background: var(--bg-button);
   border: none;
-  font-size: 8px;
+  border-radius: 0.2em;
+  cursor: pointer;
+  margin: 0.5em;
   
 }

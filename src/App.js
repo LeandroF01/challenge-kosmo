@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useFetch } from "./hook/useFetch";
 import Component from "./components/Component";
+import './styles.css'
 
 const App = () => {
   const [moveableComponents, setMoveableComponents] = useState([]);
@@ -64,8 +65,8 @@ const App = () => {
   
 
   return (
-    <main style={{ height : "100vh", width: "100vw" }}>
-      <button onClick={addMoveable}>Add Moveable1</button>
+    <main className="App" >
+      <button className="button-gen" onClick={addMoveable}>Add Moveable 1</button>
       <div
         id="parent"
         style={{

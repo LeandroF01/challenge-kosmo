@@ -103,7 +103,7 @@ const handleDelet = (e)=>{
          
         />
   
-        <button className="button" onClick={handleDelet} value={id}>Remove</button>
+        <button className="button button-gen" onClick={handleDelet} value={id}>Remove</button>
       </>
     );
   };
